@@ -30,6 +30,7 @@ namespace IT257_Winter2023
             {
                 await context.Response.WriteAsync("Hello World!");
             });
+            app.UseMvc();
         }
     }
 }
