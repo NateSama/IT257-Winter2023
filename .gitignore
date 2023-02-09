@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+#Misc Files/Folders
+/IT257-Winter2023/lib/bootstrap
