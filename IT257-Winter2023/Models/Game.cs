@@ -16,6 +16,7 @@ namespace IT257_Winter2023.Models
         public GenreModel Genre { get; set; }
         public int ConsoleId { get; set; }
         public ConsoleModel Console { get; set; }
+        public string Description { get; set; }
 
         //TODO: Implement Rating Capabilites
     }
