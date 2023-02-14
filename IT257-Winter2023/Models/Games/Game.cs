@@ -5,7 +5,7 @@ using System.Security.Policy;
 // As do all models, it needs a primary key.
 // Because multiple games can and does have the same name, it needs a separate key
 
-namespace IT257_Winter2023.Models
+namespace IT257_Winter2023.Models.Games
 {
     public class GameModel
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace IT257_Winter2023.Models
+namespace IT257_Winter2023.Models.Games
 {
     public class GenreModel
     {
