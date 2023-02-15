@@ -15,5 +15,26 @@ namespace IT257_Winter2023.Models
         public DbSet<Rating> Ratings { get; set; }
         public DbSet<GameModel> Games { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder) {
+            modelBuilder.Entity<GameModel>()
+                .HasOne(g => g.Genre)
+                .WithMany(g => g.Games)
+                .HasForeignKey(g => g.GenreId);
+
+            modelBuilder.Entity<GameModel>()
+                .HasOne(g => g.Console)
+                .WithMany(g=> g.Games)
+                .HasForeignKey(g=> g.ConsoleId);
+
+            modelBuilder.Entity<Rating>()
+                .HasOne(r => r.Provider)
+                .WithMany(g => g.Ratings)
+                .HasForeignKey(r => r.GameId);
+
+            modelBuilder.Entity<Rating>()
+                .HasOne(r => r.Provider)
+                .WithMany(p => p.Ratings)
+                .HasForeignKey(r => r.ProviderID);
+        }
     }
 }

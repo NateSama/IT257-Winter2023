@@ -1,4 +1,6 @@
-﻿using System;
+﻿using IT257_Winter2023.Models.Ratings;
+using System;
+using System.Collections.Generic;
 using System.Security.Policy;
 
 // The Game Model
@@ -18,6 +20,6 @@ namespace IT257_Winter2023.Models.Games
         public ConsoleModel Console { get; set; }
         public string Description { get; set; }
 
-        //TODO: Implement Rating Capabilites
+        List<Rating> Ratings { get; set; }
     }
 }
