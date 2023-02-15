@@ -8,6 +8,8 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Properties\Views\Home\" />
+    <Folder Include="Views\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
