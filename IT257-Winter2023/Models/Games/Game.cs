@@ -20,6 +20,6 @@ namespace IT257_Winter2023.Models.Games
         public ConsoleModel Console { get; set; }
         public string Description { get; set; }
 
-        List<Rating> Ratings { get; set; }
+        public List<Rating> Ratings { get; set; }
     }
 }

@@ -6,7 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Properties\Views\**" />
+    <Content Remove="Properties\Views\**" />
+    <EmbeddedResource Remove="Properties\Views\**" />
+    <None Remove="Properties\Views\**" />
+    <_WebToolingArtifacts Remove="Properties\Views\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Views\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
