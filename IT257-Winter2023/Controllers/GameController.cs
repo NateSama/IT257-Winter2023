@@ -3,6 +3,7 @@ using IT257_Winter2023.Models.Games;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using IT257_Winter2023.Models;
+using IT257_Winter2023.Models.Repository;
 
 public class GameController : Controller
 {
